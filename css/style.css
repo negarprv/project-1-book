@@ -1,0 +1,416 @@
+/* colors
+ pale-slate :#D2CCD0
+ tobacoo-brown : #755D41
+ falcon : #84636C
+ mid-gray: #62626C
+ */
+
+/* @font-face {
+  font-family: "Sacramento";
+  src: url("font/Sacramento-Regular.ttf") format("truetype");
+} */
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Short+Stack&family=Yellowtail&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main styling */
+html,
+body {
+  font-family: "Short Stack", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #62626c;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+  padding-bottom: 5px;
+}
+
+/* Utility Classes */
+.lead {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.bg-primary {
+  background-color: #fff;
+  color: rgba(132, 99, 108, 0.8);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #d2ccd0;
+  background-color: #84636c;
+  padding: 13px 20px;
+  border-radius: 55%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Navbar */
+
+.container-nav {
+  margin: auto;
+  max-width: 95%;
+  overflow: auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+#navbar {
+  background-color: #84636c;
+  color: #d2ccd0;
+  overflow: auto;
+  height: 90px;
+}
+
+#navbar a {
+  color: #d2ccd0;
+}
+
+#navbar h1 {
+  float: right;
+  padding-top: 20px;
+  font-size: 25px;
+  text-align: end;
+}
+
+#navbar ul {
+  list-style: none;
+  float: left;
+  height: 100%;
+}
+
+#navbar ul,
+#navbar h1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#navbar ul li {
+  float: right;
+  padding-right: 10px;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 0;
+  font-weight: 700;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #84636c;
+  border-radius: 50%;
+}
+
+#navbar ul li a:hover {
+  transform: translateY(5px);
+}
+
+/* Showcase */
+.container-showcase {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  text-align: right;
+  padding-top: 150px;
+  height: 600px;
+}
+
+#showcase {
+  background: url("../img/book-img-2.jpg") no-repeat center center/cover;
+  height: 600px;
+  opacity: 0.8;
+}
+
+.showcase-content {
+  color: #1d1d1dc7;
+  text-align: center;
+  background-color: rgba(210, 204, 208, 0.2);
+  box-shadow: 3px 2px 10px #62626c98;
+  backdrop-filter: blur(2px);
+}
+
+#showcase h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.btn-showcase {
+  font-size: 20px;
+}
+
+#showcase p {
+  line-height: 1.7em;
+  font-size: 20px;
+}
+
+/* Home info */
+#home-info {
+  height: 360px;
+}
+
+.info-img {
+  float: right;
+  width: 50%;
+  background: url("../img/books.jpg") no-repeat center center/cover;
+  /* background-size: cover; */
+  height: 360px;
+  border-left: 8px solid rgba(132, 99, 108, 0.8);
+}
+
+.info-content {
+  float: left;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  padding: 62.5px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(132, 99, 108, 0.8);
+}
+
+#home-info h2 {
+  font-size: 25px;
+}
+
+.btn-home:hover {
+  background-color: #d2ccd0;
+  color: #84636c;
+}
+/* feature */
+
+.box {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  border: 2px solid rgba(132, 99, 108, 0.8);
+}
+
+.svg {
+  padding-top: 20px;
+  width: 70px;
+  height: 70px;
+  fill: rgba(132, 99, 108, 0.8);
+}
+
+#feature h3 {
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+#feature p {
+  padding-bottom: 30px;
+}
+
+/* main footer */
+#main-footer {
+  background-color: #84636c;
+  padding: 35px;
+  text-align: center;
+}
+
+#main-footer p {
+  color: #fff;
+}
+
+/* about-info */
+
+.container-info {
+  margin: auto;
+  max-width: 1250px;
+  overflow: auto;
+  padding: 0 10px;
+  text-align: left;
+  padding-top: 50px;
+  height: min-content;
+}
+#about-info h1 {
+  color: #84636c;
+}
+
+.icon {
+  float: right;
+  width: 50%;
+  text-align: end;
+  min-height: 100%;
+}
+
+.content-info {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  font-size: larger;
+  min-height: 100%;
+}
+.svg-about {
+  padding-top: 30px;
+  width: 300px;
+  height: 300px;
+  fill: rgba(132, 99, 108, 0.8);
+}
+
+/* testimonials */
+#testimonials {
+  height: 1600px;
+  background: url("../img/bg-book.jpg") no-repeat center center/cover;
+  text-align: left;
+}
+
+.container-testimonial {
+  margin: auto;
+  max-width: 2000px;
+  overflow: auto;
+  padding: 0 10px;
+  text-align: left;
+  padding-top: 120px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#testimonials h2 {
+  padding-bottom: 100px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.person {
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 0 10px;
+  text-align: center;
+  padding-top: 100px;
+  height: 400px;
+  margin-bottom: 30px;
+  background-color: rgba(132, 99, 108, 0.623);
+  border-radius: 5px;
+}
+#testimonials p {
+  color: #fff;
+  font-size: 23px;
+  text-align: left;
+  padding-top: 30px;
+  width: 1100px;
+  padding-left: 250px;
+}
+
+.person-img {
+  float: left;
+  border-radius: 50%;
+  width: 200px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+/* form */
+
+.container-form {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  text-align: left;
+  padding-top: 50px;
+  height: 800px;
+}
+
+#form h1 {
+  font-size: 40px;
+}
+
+#form p {
+  font-size: 20px;
+}
+
+.form-group {
+  font-size: 25px;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px #62626c solid;
+}
+
+#form button {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+#form input:focus,
+#form textarea:focus {
+  border-color: #84636c;
+}
+
+/* contact-info */
+
+.box-contact {
+  background-color: rgba(132, 99, 108, 0.589);
+  height: 160px;
+  border: none;
+}
+
+.svg-contact {
+  padding-top: 20px;
+  width: 70px;
+  height: 70px;
+  fill: #e0e0e0;
+}
+
+#contact-info h2 {
+  padding-top: 10px;
+  color: rgb(56, 56, 56);
+  padding-bottom: 10px;
+}
+
+#contact-info p {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+/* footer */
+#footer {
+  background-color: rgba(132, 99, 108, 0.589);
+  margin: auto;
+  overflow: auto;
+  padding: 20px 20px;
+  text-align: center;
+  height: 85px;
+}
+
+#footer p {
+  color: #fff;
+}
